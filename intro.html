@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Webpage Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external stylesheet -->
 </head>
 <body>
     <header>
-        <h1>Welcome</h1>
+        <h1>Welcome to Our Complex Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
-            <h2>Steps</h2>
-            <p>Number <!--one--></p> 
+            <h2>About Us</h2>
+            <p>This is a complex webpage showcasing various HTML elements and concepts.</p>
+            <img src="sample-image.jpg" alt="Sample Image">
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 Complex Webpage. All rights reserved.</p>
+    </footer>
 </body>
 </html>
