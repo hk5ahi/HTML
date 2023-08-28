@@ -1,87 +1,104 @@
-/* Reset default margin and padding */
-body, h1, h2, p, ul, li, form, label, input, textarea {
-    margin: 0;
-    padding: 0;
-}
-
-/* Basic styling */
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 20px 5px;
 }
 
+/* Navigation styles */
 nav ul {
     list-style: none;
+    padding: 8px;
+    margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #444;
-    padding: 0.5rem 0;
+    background-color: #555;
 }
 
-nav li {
-    margin: 0 1rem;
+nav ul li {
+    margin: 0 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: #fff;
 }
 
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-section {
-    margin-bottom: 2rem;
+/* Section heading styles */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#Intro,#img1
+{
+     text-align: center;
+
+} 
+
+/* Table styles */
+#table1 {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
 }
 
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+#table1 th, #table1 td {
+    border: 2px solid;
+    padding: 7px;
+    text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+#span1 {
     font-weight: bold;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+#button1 {
+    margin-left: 250px;
+}
+.inputpara{
+
+    margin-right: 20px;
+
 }
 
-form input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #444;
-    color: #fff;
+.caption {
     text-align: center;
-    padding: 1rem;
+    font-style: italic;
+    color: #703939;
 }
+
+
