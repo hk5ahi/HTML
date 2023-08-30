@@ -1,226 +1,184 @@
-/* Reset and General Styles */
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
-    color: #333; /* Default text color for the body */
+    color: #333;
 }
 
 /* Header */
-header {
-    background-color: #333;
+.header {
+    background-color: #04AA6D;
     color: #fff;
-    text-align: center;
-    padding: 20px;
+    height: 8.87em;
+    padding: 1.3em;
 }
 
 /* Navigation */
-nav ul {
-    list-style: none;
-    padding: 10px;
+.items {
+    list-style-type: none;
     margin: 0;
-    display: inline-block;
-    float: left;
-    position: relative;
-    left: 305px;
-    bottom: 30px;
-
-    text-align: center;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    position: fixed;
     background-color: #555;
 }
 
-nav ul li {
-    margin: 0 15px;
-    float: left;
+.navigation {
+    margin-left: -1.28em;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
 }
 
-nav ul li a {
+.item a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s; /* Smooth color transition on hover */
-    text-align: center;
+    padding: 0.7em 1em;
+    display: block;
 }
 
-nav ul li a:hover {
-    background-color: aquamarine;
-    color:whitesmoke;/* Change link color on hover */
-    padding: 10px 5px;
+.item a:hover {
+    background-color: #45a049;
+    color: black;
 }
 
-/* Main Content */
 main {
-    padding: 20px;
-    max-width: 1200px;
+    padding: 1.2em;
+    max-width: 75em;
     margin: 0 auto;
 }
 
-/* Section Headings */
-section h2 {
-    font-size: 28px; /* Increased font size for section headings */
-    margin-bottom: 15px; /* Slightly increased margin bottom */
-    color: #555; /* Subdued heading color */
+.secondHeading {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+    color: #555;
 }
 
-/* Specific Element Styles */
-#intro, #img1 {
+.image {
     text-align: center;
-
-    margin-bottom: 30px; /* Increased margin at the bottom */
-}
-
-#intro
-{
-
-    position: relative;
-    bottom: 15px;
-}
-#img1
-{
+    margin-bottom: 0.7em;
     opacity: 0.5;
 }
-#img1:hover{
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0.85em;
+}
+
+.image:hover {
     opacity: 1;
 }
-#table1 {
+
+.table {
     border-collapse: collapse;
-    width: 100%; /* Utilize the full width */
+    width: 100%;
     margin: 0 auto;
 }
 
-#table1 th,
-#table1 td {
-    border: 2px solid #ddd; /* Lighter border color */
-    padding: 10px; /* Increased padding for better spacing */
+.table th,
+.table td {
+    border: 2px solid #ddd;
+    padding: 0.6em;
     text-align: center;
 }
 
-#span1 {
-    font-weight: 600; /* Stronger font weight */
+.span {
+    font-weight: bold;
 }
 
-#button1 {
-    margin-left: auto; /* Center-align the button */
-    margin-right: auto;
-    display: block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
+.input-parameter-button {
+    font-style: initial !important;
 }
 
-#button1:hover {
+.input-parameter-button:hover {
     background-color: #555;
 }
 
-.input-parameter {
-    margin-right: 30px; /* Slightly increased right margin */
+[class*="input"] {
+    margin-right: 30px;
+    margin-top: -0.6em;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    color: #999;
+    font-style: italic;
+    margin-bottom: 1em;
 }
 
 .caption {
     text-align: center;
     font-style: italic;
-    color: #777; /* Lighter caption color */
+    color: #777;
     margin-top: 10px;
 }
 
 /* Footer */
-footer {
+.footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
-    color: #f5f5f5; /* Lighter footer text color */
+    color: #f5f5f5;
 }
-::selection
-{
-    color:white;
+
+::selection {
+    color: white;
     background-color: blue;
 }
 
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
-    nav ul {
+    .items {
         flex-direction: column;
     }
 
-    nav ul li {
+    .item {
         margin: 10px 0;
     }
 
-    #button1 {
+    .input-parameter-button {
         margin-left: auto;
         margin-right: auto;
-        width: 50%; /* Center-align button and adjust width for smaller screens */
+        width: 50%;
     }
 }
 
-#message {
-    resize: none;
-}
-
-/* Additional Styles for Form */
-* {
-    box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
+.label {
+    padding: 0.8em 0.8em 0.8em 0;
     display: inline-block;
 }
 
-input[type=submit] {
+.input-parameter-button {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-input[type=submit]:hover {
+.input-parameter-button:hover {
     background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .input-parameter-button {
         width: 100%;
         margin-top: 0;
     }

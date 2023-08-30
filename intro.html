@@ -5,41 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demonstration Webpage</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
-<body>
-
-<header>
-    <h1 id="intro">Welcome to Demonstration Webpage</h1>
-
-    <nav>
-        <ul>
-            <li><a href="#home" title="Home">Home</a></li>
-            <li><a href="#about" title="About">About</a></li>
-            <li><a href="#services" title="Services">Services</a></li>
-            <li><a href="#testimonials" title="Testimonials">Testimonials</a></li>
-            <li><a href="#latest-blogposts" title="Latest Blog Posts">Latest Blog Posts</a></li>
-            <li><a href="#contact" title="Contact">Contact</a></li>
+<body class="body">
+<header class="header">
+    <h1 class="introduction">Welcome to Demonstration Webpage</h1>
+    <nav class="navigation">
+        <ul class="items">
+            <li class="item"><a href="#home" title="Home">Home</a></li>
+            <li class="item"><a href="#about" title="About">About</a></li>
+            <li class="item"><a href="#services" title="Services">Services</a></li>
+            <li class="item"><a href="#testimonials" title="Testimonials">Testimonials</a></li>
+            <li class="item"><a href="#latest-blogposts" title="Latest Blog Posts">Latest Blog Posts</a></li>
+            <li class="item"><a href="#contact" title="Contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <section id="home">
-        <h2>Home</h2>
+        <h2 class="secondHeading">Home</h2>
         <p>Welcome to our website! Explore and discover more about us.</p>
     </section>
     <section id="about">
-        <h2>About Us</h2>
-        <p>This is a simple webpage showcasing various <span id="span1">HTML</span> elements and concepts.</p>
-        <figure id="img1">
-            <img src="sample-image.jpg" alt="Sample Image" width="450" height="250" title="Sample Image">
+        <h2 class="secondHeading">About Us</h2>
+        <p>This is a simple webpage showcasing various <span class="span">HTML</span> elements and concepts.</p>
+        <figure class="image">
+            <img src="sample-image.jpg" alt="Sample Image" width=42% title="Sample Image">
             <figcaption class="caption">Promotional Website Image</figcaption>
         </figure>
     </section>
     <section id="services">
-        <h2>Services</h2>
+        <h2 class="secondHeading">Services</h2>
         <p>The common services that we offer are:</p>
-        <table id="table1">
+        <table class="table">
             <caption class="caption">Service Pricing</caption>
             <tr>
                 <th>Service</th>
@@ -61,7 +58,7 @@
         <p>We offer a range of services to help you achieve your online presence and design goals.</p>
     </section>
     <section id="testimonials">
-        <h2>Testimonials</h2>
+        <h2 class="secondHeading">Testimonials</h2>
         <blockquote>
             "I'm really impressed with the quality of work they provided. Highly recommended!"
         </blockquote>
@@ -70,7 +67,7 @@
         </blockquote>
     </section>
     <section id="latest-blogposts">
-        <h2>Latest Blog Posts</h2>
+        <h2 class="secondHeading">Latest Blog Posts</h2>
         <article>
             <h3>10 Tips for Effective Web Design</h3>
             <p>Learn how to create user-friendly and visually appealing websites.</p>
@@ -81,23 +78,23 @@
         </article>
     </section>
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2 class="secondHeading">Contact Us</h2>
         <fieldset>
             <legend>Get in Touch</legend>
             <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-            <form action="/submit" method="post">
-                <label for="name">Name: </label>
-                <input class="input-parameter" type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input class="input-parameter" type="email" id="email" name="email" required placeholder="someone@gmail.com">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <input id="button1" type="submit" value="Send Message">
+            <form class="form" action="/submit" method="post">
+                <label class="label" for="name">Name: </label>
+                <input class="input-parameter-text" type="text" id="name" name="name" required placeholder="John Doe">
+                <label class="label" for="email">Email:</label>
+                <input class="input-parameter-email" type="email" id="email" name="email" required placeholder="someone@gmail.com">
+                <label class="label" for="message">Message:</label>
+                <textarea class="input-parameter-message" id="message" name="message" rows="4" required placeholder="Anything you want to share with us"></textarea>
+                <input class="input-parameter-button" type="submit" value="Send Message">
             </form>
         </fieldset>
     </section>
 </main>
-<footer>
+<footer class="footer">
     <p>&copy; 2023 Complex Webpage. All rights reserved.</p>
 </footer>
 </body>
