@@ -10,54 +10,11 @@ body {
     color: #333;
 }
 
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 100px;
-
-    list-style-type: none;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 18px;
-    text-decoration: none;
-
-    display: flex;
-    flex-direction: column;
-
-}
-.dropdown li
-{
-    justify-content: center;
-    text-align: center;
-    background-color: #555;
-    width: 130%;
-
-}
-.dropdown-content a:hover {background-color: #f1f1f1
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .service {
-    background-color: #3e8e41;
-}
-
+/* Header */
 .header {
     background-color: #04AA6D;
     color: #fff;
-    /*height: 8.87em;*/
+    height: 8.87em;
     padding: 1.3em;
 }
 
@@ -69,6 +26,7 @@ body {
     top: 0;
     width: 100%;
     display: flex;
+    overflow: hidden;
     justify-content: space-around;
     position: fixed;
     background-color: #555;
@@ -112,13 +70,10 @@ main {
 }
 
 .introduction {
-
+    display: flex;
+    justify-content: center;
     position: relative;
-    top: 1.1em;
-    text-align: center;
-    padding-bottom: 1em;
-
-
+    top: 0.85em;
 }
 
 .image:hover {
@@ -168,7 +123,6 @@ main {
     font-style: italic;
     color: #777;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -187,9 +141,7 @@ main {
 /* Media Query for Small Screens */
 @media (max-width: 768px) {
     .items {
-        flex-direction: row;
-        position: static;
-
+        flex-direction: column;
     }
 
     .item {
@@ -224,7 +176,7 @@ main {
     background-color: #45a049;
 }
 
-
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .input-parameter-button {
         width: 100%;
