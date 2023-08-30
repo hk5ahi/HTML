@@ -13,15 +13,7 @@
         <ul class="items">
             <li class="item"><a href="#home" title="Home">Home</a></li>
             <li class="item"><a href="#about" title="About">About</a></li>
-            <li class="item dropdown">
-                <a class="service" href="#" title="Services">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="#web-design">Web Design</a></li>
-                    <li><a href="#graphic-design">Graphic Design</a></li>
-                    <li><a href="#content-creation">Content Creation</a></li>
-                </ul>
-            </li>
-
+            <li class="item"><a href="#services" title="Services">Services</a></li>
             <li class="item"><a href="#testimonials" title="Testimonials">Testimonials</a></li>
             <li class="item"><a href="#latest-blogposts" title="Latest Blog Posts">Latest Blog Posts</a></li>
             <li class="item"><a href="#contact" title="Contact">Contact</a></li>
@@ -51,15 +43,15 @@
                 <th>Price</th>
             </tr>
             <tr>
-                <td id="web-design">Web Design</td>
+                <td>Web Design</td>
                 <td>$500</td>
             </tr>
             <tr>
-                <td id="graphic-design">Graphic Design</td>
+                <td>Graphic Design</td>
                 <td>$300</td>
             </tr>
             <tr>
-                <td id="content-creation">Content Creation</td>
+                <td>Content Creation</td>
                 <td>$200</td>
             </tr>
         </table>
@@ -90,7 +82,7 @@
         <fieldset>
             <legend>Get in Touch</legend>
             <p>If you have any questions or inquiries, feel free to reach out to us.</p>
-            <form class="form" action="http://localhost:8080/users/web" method="post" enctype="application/x-www-form-urlencoded">
+            <form class="form" action="/submit" method="post">
                 <label class="label" for="name">Name: </label>
                 <input class="input-parameter-text" type="text" id="name" name="name" required placeholder="John Doe">
                 <label class="label" for="email">Email:</label>
